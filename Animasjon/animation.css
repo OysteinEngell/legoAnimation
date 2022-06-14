@@ -1,0 +1,961 @@
+body {
+    position: relative;
+    margin: 0;
+    background-color: #009DDA;
+    height: 100vh;
+}
+
+.code-animation {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    width: 40vw;
+}
+
+
+.screen-display {
+    width: 76.5%;
+    height: 49%;
+    position: absolute;
+    top: 7%;
+    left: 10.5%;
+    overflow: hidden;
+} /* Denne posisjonerer animasjonen */
+
+.screen {
+    position: relative;
+    width: 100%;
+    height: 100%;    
+ }/* Denne er relativen som animasonen bruker for posisjonering */
+
+
+/* Klossene har 2 forskjellige klasser på grunn av at det er to størrelser */
+ .animation-lego-brick-single {
+    position: absolute;
+    width: 10%;
+}
+
+.animation-lego-brick-double {
+    position: absolute;
+    width: 17%;
+}
+
+
+/* en ID per kloss i animasjonen samt en unik animasjon per kloss. */
+ #animation-brick1 {
+    top: 5%;
+    left: 5%;
+    opacity: 100%;
+    animation-name: typing;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    z-index: 9999;
+} /* ease-out for en mer organisk bevegelse.*/
+
+#animation-brick2 {
+    top: 5%;
+    left: 5%;
+    z-index: 701;
+    animation-name: brick2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+} /* z-index brukes for å ha forskjellige lag over og under hverandre */
+
+#animation-brick3 {
+    top: 5%;
+    left: 15%;
+    z-index: 702;
+    animation-name: brick3;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+#animation-brick4 {
+    top: 5%;
+    left: 25%;
+    z-index: 703;
+    animation-name: brick4;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    
+}
+
+#animation-brick5 {
+    top: 5%;
+    left: 33%;
+    z-index: 704;
+    animation-name: brick5;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+#animation-brick6 {
+    top: 5%;
+    left: 43%;
+    z-index: 705;
+    animation-name: brick6;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+#animation-brick7 {
+    top: 14%;
+    left: 5%;
+    z-index: 601;
+    animation-name: brick7;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+#animation-brick8 {
+    top: 14%;
+    left: 19%;
+    z-index: 602;
+    animation-name: brick8;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+#animation-brick9 {
+    top: 23%;
+    left: 5%;
+    z-index: 401;
+    animation-name: brick9;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    
+}
+
+#animation-brick10 {
+    top: 23%;
+    left: 12%;
+    z-index: 501;
+    animation-name: brick10;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+#animation-brick11 {
+    top: 23%;
+    left: 19%;
+    z-index: 502;
+    animation-name: brick11;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+#animation-brick12 {
+    top: 23%;
+    left: 26%;
+    z-index: 503;
+    animation-name: brick12;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+#animation-brick13 {
+    top: 23%;
+    left: 40%;
+    z-index: 504;
+    animation-name: brick13;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+#animation-brick14 {
+    top: 23%;
+    left: 47%;
+    z-index: 505;
+    animation-name: brick14;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+#animation-brick15 {
+    top: 33%;
+    left: 12%;
+    z-index: 401;
+    opacity: 0%;
+    animation-name: brick15;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    
+}
+
+#animation-brick16 {
+    top: 33%;
+    left: 19%;
+    z-index: 402;
+    opacity: 0%;
+    animation-name: brick16;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    
+}
+
+#animation-brick17 {
+    top: 33%;
+    left: 26%;
+    z-index: 403;
+    opacity: 0%;
+    animation-name: brick17;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    
+}
+
+#animation-brick18 {
+    top: 33%;
+    left: 40%;
+    z-index: 404;
+    opacity: 0%;
+    animation-name: brick18;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    
+}
+
+#animation-brick19 {
+    top: 33%;
+    left: 47%;
+    z-index: 405;
+    opacity: 0%;
+    animation-name: brick19;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    
+}
+
+@keyframes brick19{
+    0%{
+    left: 50%;
+    opacity: 0%;
+    }
+
+    85%{    
+    left: 50%;
+    opacity: 0%;
+    }
+
+    87.5%{
+    left: 47%;
+    opacity: 100%;
+
+    }
+
+    93.5%{
+    top: 33%;
+    }
+
+    100%{
+    top: -10%;    
+    left: 47%;
+    opacity: 100%;
+    }
+
+} /* bruker opacity for å få klossene til å dukke opp til riktig tid */
+
+
+@keyframes brick18{
+    0%{
+    left: 44%;
+    opacity: 0%;
+    }
+
+    82.5%{
+    left: 44%;
+    opacity: 0%;
+    }
+
+    85%{
+    left: 40%;
+    opacity: 100%;
+    }
+
+    93%{
+        top: 33%;
+    }
+
+    100%{
+        top: -10%;
+        opacity: 100%;
+    }
+
+}
+
+@keyframes brick17{
+    0%{
+    left: 29%;
+    opacity: 0%;
+    }
+
+    80%{ 
+    left: 29%;
+    opacity: 0%;
+    }
+
+    82.5%{
+    left: 26%;
+    opacity: 100%;
+    }
+
+    92.5%{
+    top: 33%;
+    }
+
+    100%{
+    top: -10%;    
+    opacity: 100%;
+    }
+
+}
+
+@keyframes brick16{
+    0%{
+    left: 24%;
+    opacity: 0%;
+    }
+
+    77.5%{
+    left: 24%;    
+    opacity: 0%;
+    }
+
+    80%{
+        top: 33%;
+        left: 19%;
+        opacity: 100%;        
+    }
+
+    92%{
+        top: 33%;  
+    }
+
+    100%{
+        top: -10%;
+        opacity: 100%;
+    }
+
+}
+
+
+@keyframes brick15{
+    0%{
+        left: 16%;
+        opacity: 0%;
+    }
+
+    75%{ 
+        left: 16%;
+        opacity: 0%;
+    }
+
+    77.5%{
+        left: 12%;
+        opacity: 100%;
+    }
+
+    89%{
+        top: 33%;
+    }
+
+    91.5%{
+        top: 33%;
+    }
+
+    100%{
+        top: -10%;
+        left: 12%;
+        opacity: 100%;
+    }
+
+}
+
+
+@keyframes brick14{
+    0%{
+    left: 50%;
+    opacity: 0%;
+    }
+
+    63%{ 
+    left: 50%;
+    opacity: 0%;
+    }
+
+    65.5%{    
+    left: 47%;
+    opacity: 100%;
+
+    }
+
+    91%{
+        top: 23%;
+    }
+
+    100%{
+    top: -10%;
+    left: 47%;
+    opacity: 100%;
+    }
+
+}
+
+
+@keyframes brick13{
+    0%{
+    left: 44%;
+    opacity: 0%;
+    }
+
+    61.5%{    
+    left: 44%;
+    opacity: 0%;
+    }
+
+    63%{    
+    left: 40%;
+    opacity: 100%;
+    }
+
+    90.5%{
+    top: 23%;
+    }
+
+    100%{
+    top: -10%; 
+    opacity: 100%;
+    }
+
+}
+
+@keyframes brick12{
+    0%{
+    left: 29%;
+    opacity: 0%;
+    }
+
+    59%{
+    left: 29%;
+    opacity: 0%;
+    }
+
+    61.5%{    
+    left: 26%;
+    opacity: 100%;
+    }
+
+    90%{
+        top: 23%;
+    }
+
+    100%{
+        top: -10%;
+        opacity: 100%;
+    }
+
+}
+
+@keyframes brick11{
+    0%{
+    left: 24%;
+    opacity: 0%;
+    }
+
+    56.5%{
+    left: 24%;
+    opacity: 0%;
+    }
+
+    59%{
+    left: 19%;
+    opacity: 100%;
+    }
+
+    89.5%{
+        top: 23%;
+    }
+
+    100%{
+        top: -10%;
+        opacity: 100%;
+    }
+
+}
+
+
+@keyframes brick10{
+    0%{
+        left: 16%;
+        opacity: 0%;
+    }
+
+    56%{
+        left: 16%;
+        opacity: 0%;
+    }
+
+    57.5%{
+        left: 12%;
+        opacity: 100%;
+
+    }
+
+    89%{
+        top: 23%;
+    }
+
+    100%{
+    top: -10%;
+        left: 12%;
+        opacity: 100%;
+    }
+
+}
+
+@keyframes brick9 {
+    0%{
+    opacity: 0%;
+    }
+
+    48%{
+    top: 23%;
+    left: 8%;
+    opacity: 0%;
+    }
+
+    50%{
+    top: 23%;
+    left: 5%;
+    opacity: 100%;
+    }
+
+    52.5%{
+    top: 32%;    
+    }
+
+    66%{
+        top: 32%; 
+        z-index: 401;   
+    }
+
+    68.5%{
+        top: 42%;
+        z-index: 301;
+    }
+
+    94%{
+    top: 42%;  
+    }
+
+    100%{
+    opacity: 100%;
+    top: -10%; 
+    }
+} /* z-index animeres fordi den flyttes under andre klosser i animasjonen */
+
+@keyframes brick8 {
+    0%{
+        opacity: 0%;
+    }
+
+    33%{
+        opacity: 0%;
+        left: 23%;
+    }
+
+    35%{
+        opacity: 100%;
+        left: 19%;
+        top: 14%;
+    }
+
+    88%{
+        top: 14%;
+    }
+
+    100%{
+        
+        top: -10%; 
+    }
+}
+
+@keyframes brick7 {
+    0%{
+    opacity: 0%;
+    }
+    28%{
+    opacity: 0%;
+    left: 8%;
+    }
+
+    31%{
+    opacity: 100%;
+    left: 5%;
+    }
+
+    87.5%{
+        
+    top: 14%;
+    }
+
+    100%{
+        
+    top: -10%; 
+    }
+}
+
+@keyframes brick6 {
+    0% {
+        opacity: 0%;
+    }
+
+    15% {
+        opacity: 0%;
+        left: 43%;
+    }
+
+    17.5% {
+        opacity: 100%;
+        left: 40%;
+        top: 5%;
+       
+    }
+
+    87%{
+        top: 5%;
+    }
+
+    100%{
+        left: 40%;
+        top: -10%;
+    }
+}
+
+@keyframes brick5 {
+    0%{
+    opacity: 0%;
+    }
+
+    13%{
+        opacity: 0%;
+        left: 36%;
+    }
+
+    14.5%{
+        opacity: 100%;
+        left: 33%;
+    }
+
+    86.5%{
+        top: 5%;
+    }
+
+    100%{
+    
+    top: -10%; 
+    }
+}
+
+@keyframes brick4 {
+    0% {
+    opacity: 0%;
+    }
+
+    10% {
+    opacity: 0%; 
+    left: 25%;   
+    }
+
+    12.5% {
+    opacity: 100%;
+    left: 19%;    
+    }
+
+    86%{
+        top: 5%;
+    }
+
+
+    100% {
+    left: 19%; 
+    top: -10%; 
+    }
+}
+
+@keyframes brick3 {
+    0% {
+    opacity: 0;
+    }
+
+    7.5% {
+    opacity: 0;
+    left: 15%;
+    }
+
+    10% {
+    opacity: 100%;
+    left: 12%;
+    top: 5%;
+    }
+
+    85.5%{
+    top: 5%;
+    }
+
+    100% {
+    top: -10%;
+    left: 12%;
+    }
+}
+
+@keyframes brick2 {
+
+85%{
+    top: 5%;
+    left: 5%;  
+}
+
+100%{
+    top: -10%;
+    left: 5%;
+}
+}
+
+
+/* opacity går av og på for å simulere curser streken når man skriver. Når denne klossen flytter seg, er det timet slik at det dukker opp en kloss bak. */
+@keyframes typing {
+
+   2.5% {
+    opacity: 0;
+    left: 5%;
+
+   }
+
+   5% {
+    opacity: 100%;
+    left: 12%;
+   }
+
+   7.5% {
+    left: 12%;
+   }
+
+   10% {
+    opacity: 100%;
+    left: 25%;
+   }
+
+   12.5% {
+    opacity: 0;
+    left: 35%;
+   }
+
+   15% {
+    opacity: 100%;
+    left: 45%;
+   }
+   
+   20% {
+    opacity: 100%;
+    left: 55%;
+   }
+
+   22.5%{
+    opacity: 0;
+    left: 55%;
+    top: 5%;
+    z-index: 9999;
+   }
+
+   /*linje 2*/
+
+   22.6%{
+    top: 14%;
+    left: 5%;
+    z-index: 700;
+   }
+
+   25% {
+    opacity: 100%;
+      
+   }
+
+   27.5%{
+    left: 5%; 
+   }
+
+   30% {
+    opacity: 100%;
+    left: 22%;
+    
+   }
+
+   32.5% {
+    opacity: 0%;
+    left: 22%;
+    
+   }
+
+
+   35% {
+    opacity: 100%;
+    left: 29%;
+    
+   }
+
+   40% {
+    opacity: 100%;
+   }
+
+   43.5% {
+    opacity: 0%;
+    left: 29%;
+    top: 14%;
+    z-index: 700;
+   }
+
+/*Linje 3*/
+
+   43.6%{
+    left: 5%;
+    top: 23%; 
+    z-index: 600;  
+   }
+
+   45% {
+    opacity: 100%;
+    
+   }
+
+   47.5%{
+    left: 5%;
+    
+   }
+
+   50% {
+    opacity: 100%;
+    left: 19%;
+    
+   }
+
+
+   51.5% {
+    opacity: 0%;
+    left: 19%;
+    top: 23%; 
+   }
+   51.6%{
+   left: 12%;
+    
+   }
+
+   55% {
+    opacity: 100%;
+    left: 12%;
+   
+   }
+
+   57.5%{
+    left: 23%;
+   }
+
+   60% {
+    opacity: 100%;
+    left: 42%;
+   }
+
+   62.5% {
+    opacity: 0%;
+    left: 49%;
+    
+   }
+
+   65% {
+    opacity: 100%;
+    left: 55%;
+   }
+
+   70% {
+    opacity: 100%;
+   }
+
+   72.5% {
+    opacity: 0%;
+    left: 55%;
+    top: 23%; 
+    z-index: 600; 
+   }
+
+   72.6%{
+    left: 12%;
+    top: 33%; 
+    z-index: 500;
+   }
+
+   75% {
+    opacity: 100%;
+    left: 12%;
+   
+   }
+
+   77.5%{
+    left: 23%;
+   }
+
+   80% {
+    opacity: 100%;
+    left: 42%;
+   }
+
+   82.5% {
+    opacity: 0%;
+    left: 49%;
+    
+   }
+
+   85% {
+    opacity: 100%;
+    left: 55%;
+    top: 33%;
+   }
+
+   90% {
+    opacity: 0%;
+    left: 55%;
+    top: 33%;
+   }
+
+   92.5% {
+    opacity: 0%;
+   }
+
+   95% {
+    opacity: 0%;
+   }
+
+   100% {
+    z-index: 400;
+   }
+} 
+
+
